@@ -1,11 +1,11 @@
 
-all: helloworld rename_process
+all: helloworld call_execvp
 
 helloworld: helloworld.c
 	gcc -o helloworld helloworld.c
 
-rename_process: rename_process.c
-	gcc -o rename_process rename_process.c
+call_execvp: call_execvp.c
+	gcc -o call_execvp call_execvp.c
 
 clean:
-	rm helloworld rename_process
+	rm helloworld call_execvp

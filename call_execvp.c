@@ -12,7 +12,7 @@ int main( int argc, char *argv[])
 #ifdef EXECVP
     printf( "calling helloworld with execvp\n");
     char *const args[] = { "PLACEHOLDER_FOR_RENAMING_THE_PROCESS", "1st", "2nd", "3rd", "4th", "5th", NULL};
-    if ( execvp( "/home/gabor/rename_process/helloworld", args) < 0)
+    if ( execvp( "./helloworld", args) < 0)
     {
         printf( "error exec: %d - %s\n", errno, strerror( errno));
     }
